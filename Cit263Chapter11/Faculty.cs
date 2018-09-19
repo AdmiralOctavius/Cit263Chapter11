@@ -8,10 +8,15 @@ namespace Cit263Chapter11
 {
     public class Faculty: Employee
     {
+        public string department;
+        public Faculty(string f, string l, string m, decimal s, string d): base(f, l, m, s)
+        {
+            department = d;
+        }
         public override string ToString()
         {
-            
-            return base.ToString();
+            string result = base.ToString() + " " + department;
+            return result;
         }
     }
 }

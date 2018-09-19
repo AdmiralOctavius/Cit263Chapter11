@@ -10,7 +10,9 @@ namespace Cit263Chapter11
     {
         static void Main(string[] args)
         {
-
+            Student student1 = new Student("Name","LName","msfsd");
+            Faculty faculty1 = new Faculty("Isaac", "Bennett", "Asdfwv", 100, "Cit");
+            Console.WriteLine(faculty1.ToString());
         }
     }
 }
